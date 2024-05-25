@@ -130,7 +130,6 @@ public class LogRecord {
             this.message = traceMessages[random.nextInt(traceMessages.length)];
         }
 
-        System.out.println(this);
     }
 
     public LocalDateTime getTimestamp() {

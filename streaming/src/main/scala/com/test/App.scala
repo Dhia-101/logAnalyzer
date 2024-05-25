@@ -85,19 +85,7 @@ object App {
           (row._2.getLogLevel, (1, row._2, row._1))
         })
 
-      /**
-        * aggregate data by market type
-        *
-        * tuple has 3 items,
-        * the first one is counter value and this value is 1,
-        * second one is the rate and received from Kafka,
-        * third one is event time. for instance `2017-05-12 16:00:00`
-        *
-        * in the map,
-        * method <code>f._1</code> is market name,
-        * we divide total rate to total item count <code>f._2._2 / f._2._1</code>
-        * as you can see <code>f._2._3</code> is average event time
-        **/
+
 //      val flatten = pairs
 //        .reduceByKey((x, y) =>
 //          (x._1 + y._1, x._2 + y._2, (y._3 + x._3) / 2))
